@@ -33,19 +33,19 @@ public class Chaser : StateManager<ChaserState>
 
     void HandleInput()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha1)) // 1 Ű
+        if (Input.GetKeyDown(KeyCode.Alpha1)) // '1' key
         {
             ChangeState(ChaserState.Idle);
         }
-        else if (Input.GetKeyDown(KeyCode.Alpha2)) // 2 Ű
+        else if (Input.GetKeyDown(KeyCode.Alpha2)) // '2' key
         {
             ChangeState(ChaserState.Patrol);
         }
-        else if (Input.GetKeyDown(KeyCode.Alpha3)) // 3 Ű
+        else if (Input.GetKeyDown(KeyCode.Alpha3)) // '3' key
         {
             ChangeState(ChaserState.Chase);
         }
-        else if (Input.GetKeyDown(KeyCode.Alpha4)) // 4 Ű
+        else if (Input.GetKeyDown(KeyCode.Alpha4)) // '4' key
         {
             ChangeState(ChaserState.Attack);
         }

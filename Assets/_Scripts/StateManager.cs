@@ -11,7 +11,6 @@ public abstract class StateManager<EState> : MonoBehaviour where EState : Enum
 
     protected virtual void Start()
     {
-        //CurrentState?.EnterState();
     }
 
     protected virtual void Update()

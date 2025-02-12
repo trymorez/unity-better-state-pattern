@@ -1,8 +1,8 @@
 using UnityEngine;
 
-public class ChaseState : BaseState<ChaserState>
+public class ChaseState : BaseState<NPCState>
 {
-    public ChaseState() : base(ChaserState.Chase) { }
+    public ChaseState() : base(NPCState.Chase) { }
 
     public override void EnterState()
     {
@@ -19,9 +19,9 @@ public class ChaseState : BaseState<ChaserState>
         Debug.Log("Exiting Chase");
     }
 
-    public override ChaserState GetNextState()
+    public override NPCState GetNextState()
     {
-        return ChaserState.Chase;
+        return NPCState.Chase;
     }
 
     public override void OnTriggerEnter(Collider other)

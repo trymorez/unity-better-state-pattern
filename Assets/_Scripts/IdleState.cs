@@ -1,8 +1,8 @@
 using UnityEngine;
 
-public class IdleState : BaseState<ChaserState>
+public class IdleState : BaseState<NPCState>
 {
-    public IdleState() : base(ChaserState.Idle) { }
+    public IdleState() : base(NPCState.Idle) { }
 
     public override void EnterState()
     {
@@ -19,9 +19,9 @@ public class IdleState : BaseState<ChaserState>
         Debug.Log("Exiting Idle");
     }
 
-    public override ChaserState GetNextState()
+    public override NPCState GetNextState()
     {
-        return ChaserState.Idle;
+        return NPCState.Idle;
     }
 
     public override void OnTriggerEnter(Collider other)
